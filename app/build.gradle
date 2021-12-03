@@ -5,7 +5,7 @@ plugins {
 apply from: '../config/detekt/detekt.gradle'
 
 android {
-    compileSdk 30
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.jordilucas.marvelapp"
