@@ -1,9 +1,9 @@
 apply plugin: "io.gitlab.arturbosch.detekt"
 
 project.afterEvaluate {
-    tasks.named("preBuild") {
+    /*tasks.named("preBuild") {
         dependsOn("detekt")
-    }
+    }*/
 }
 
 detekt {
@@ -15,21 +15,21 @@ detekt {
     source = files(inputDirFiles)
     config = files("$rootDir/config/detekt/detekt.yml")
     autoCorrect = true
-    tasks.named("detekt").configure {
+    /*tasks.named("detekt").configure {
         reports {
             // Enable/Disable XML report (default: true)
-            xml.required.set(true)
-            xml.outputLocation.set(file("$buildDir/reports/detekt/detekt.xml"))
+            *//*xml.required.set(true)
+            xml.outputLocation.set(file("$buildDir/reports/detekt/detekt.xml"))*//*
 
             // Enable/Disable HTML report (default: true)
-            html.required.set(true)
-            html.outputLocation.set(file("$buildDir/reports/detekt/detekt.html"))
+           *//* html.required.set(true)
+            html.outputLocation.set(file("$buildDir/reports/detekt/detekt.html"))*//*
 
             // Enable/Disable TXT report (default: true)
-            txt.required.set(true)
-            txt.outputLocation.set(file("$buildDir/reports/detekt/detekt.txt"))
+            *//*txt.required.set(true)
+            txt.outputLocation.set(file("$buildDir/reports/detekt/detekt.txt"))*//*
 
         }
-    }
+    }*/
 
 }
