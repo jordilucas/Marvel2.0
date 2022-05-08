@@ -62,10 +62,6 @@ comments:
   EndOfSentenceFormat:
     active: false
     endOfSentenceFormat: '([.?!][ \t\n\r\f<])|([.?!:]$)'
-  OutdatedDocumentation:
-    active: false
-    matchTypeParameters: true
-    matchDeclarationsOrder: true
   UndocumentedPublicClass:
     active: false
     excludes: ['**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/jsTest/**', '**/iosTest/**']
@@ -121,7 +117,6 @@ complexity:
     constructorThreshold: 7
     ignoreDefaultParameters: false
     ignoreDataClasses: true
-    ignoreAnnotatedParameter: []
   MethodOverloading:
     active: false
     threshold: 6
@@ -156,12 +151,6 @@ coroutines:
   active: true
   GlobalCoroutineUsage:
     active: false
-  InjectDispatcher:
-    active: false
-    dispatcherNames:
-      - 'IO'
-      - 'Default'
-      - 'Unconfined'
   RedundantSuspendModifier:
     active: false
   SleepInsteadOfDelay:
@@ -458,10 +447,6 @@ naming:
   InvalidPackageDeclaration:
     active: false
     rootPackage: ''
-  LambdaParameterNaming:
-    active: false
-    excludes: ['**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/jsTest/**', '**/iosTest/**']
-    parameterPattern: '[a-z][A-Za-z0-9]*|_'
   MatchingDeclarationName:
     active: true
     mustBeFirst: true
@@ -569,9 +554,6 @@ potential-bugs:
     ignoreOnClassesPattern: ''
   MapGetWithNotNullAssertionOperator:
     active: false
-  MissingPackageDeclaration:
-    active: false
-    excludes: ['**/*.kts']
   MissingWhenCase:
     active: true
     allowElseExpression: true
@@ -633,7 +615,6 @@ style:
       - 'STOPSHIP:'
       - 'TODO:'
     allowedPatterns: ''
-    customMessage: ''
   ForbiddenImport:
     active: false
     imports: []
@@ -746,7 +727,6 @@ style:
     active: false
   UnderscoresInNumericLiterals:
     active: false
-    acceptableLength: 4
   UnnecessaryAbstractClass:
     active: true
   UnnecessaryAnnotationUseSiteTarget:
@@ -770,8 +750,6 @@ style:
   UnusedPrivateMember:
     active: true
     allowedNames: '(_|ignored|expected|serialVersionUID)'
-  UseAnyOrNoneInsteadOfFind:
-    active: false
   UseArrayLiteralsInAnnotations:
     active: false
   UseCheckNotNull:
