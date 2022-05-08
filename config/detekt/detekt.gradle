@@ -29,18 +29,6 @@ detekt {
                 enabled = true
                 destination = file("$buildDir/reports/detekt/detekt.txt")
             }
-            /*// Enable/Disable XML report (default: true)
-            xml.required.set(true)
-            xml.outputLocation.set(file("$buildDir/reports/detekt/detekt.xml"))
-
-            // Enable/Disable HTML report (default: true)
-            html.required.set(true)
-            html.outputLocation.set(file("$buildDir/reports/detekt/detekt.html"))
-
-            // Enable/Disable TXT report (default: true)
-            txt.required.set(true)
-            txt.outputLocation.set(file("$buildDir/reports/detekt/detekt.txt"))*/
-
         }
     }
 
