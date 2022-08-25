@@ -313,6 +313,4 @@ hs_err_pid*
 !/gradle/wrapper/gradle-wrapper.jar
 *./jks
 
-apikey.properties
-
 # End of https://www.toptal.com/developers/gitignore/api/android,androidstudio,intellij+all
