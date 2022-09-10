@@ -1,4 +1,4 @@
-package com.example.core.data.network.domain.model
+package com.example.core.domain.model
 
 data class Character(
     val name: String,

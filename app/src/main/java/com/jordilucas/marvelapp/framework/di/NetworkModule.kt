@@ -1,6 +1,6 @@
 package com.jordilucas.marvelapp.framework.di
 
-import com.example.core.data.network.interceptor.AuthorizationInterceptor
+import com.jordilucas.marvelapp.framework.network.interceptor.AuthorizationInterceptor
 import com.jordilucas.marvelapp.BuildConfig
 import dagger.Module
 import dagger.Provides
