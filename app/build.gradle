@@ -47,6 +47,7 @@ android {
     buildFeatures{
         viewBinding = true
     }
+    namespace 'com.jordilucas.marvelapp'
 }
 
 dependencies {
