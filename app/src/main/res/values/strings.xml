@@ -34,4 +34,5 @@
     <!-- About -->
     <string name="about_screen_title">About</string>
     <string name="about_attribution">Data provided by Marvel. © 2021 Marvel</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
